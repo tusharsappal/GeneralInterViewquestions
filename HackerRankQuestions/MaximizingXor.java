@@ -8,20 +8,17 @@ public class Solution {
 
 
     static int maxXor(int l, int r) {
-        if(((l<1)&&(l>1000))||((r<1)&&(r>1000)))
+        if (((l < 1) && (l > 1000)) || ((r < 1) && (r > 1000)))
             System.exit(1);
-        int max=0;
-        int result=0;
+        int max = 0;
+        int result = 0;
 
-        for(int i=l; i<=r ; i++)
-        {
-            for(int j=l; j<=r; j++)
-            {
-                result= i ^ j;
+        for (int i = l; i <= r; i++) {
+            for (int j = l; j <= r; j++) {
+                result = i ^ j;
 
-                if(result> max)
-                {
-                    max= result;
+                if (result > max) {
+                    max = result;
                 }
             }
 
