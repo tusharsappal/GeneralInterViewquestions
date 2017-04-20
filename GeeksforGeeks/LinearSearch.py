@@ -1,3 +1,4 @@
+# A simple class demonstrating Linear Search
 class Example(object):
     def linearSearch(self):
         string_input = raw_input()

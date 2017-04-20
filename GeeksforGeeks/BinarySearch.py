@@ -1,3 +1,4 @@
+# A simple class demonstrating Binary Search
 class BinarySearch(object):
     def binarySearch(self):
         print "Enter the Sorted Array \n"
@@ -27,7 +28,6 @@ class BinarySearch(object):
         if ( lower_limit > higher_limit):
             print "Number not found"
 
-            middle = (lower_limit+ higher_limit)/2
 
 if __name__ == '__main__':
     BinarySearch().binarySearch()

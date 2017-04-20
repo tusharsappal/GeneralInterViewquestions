@@ -1,3 +1,4 @@
+# A simple Class demonstrating Jump Search, the array should be sorted
 import math
 
 
