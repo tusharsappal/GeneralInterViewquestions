@@ -1,2 +1,5 @@
-.idea/*
+.idea/*.xml
+.idea/*.iml
+
 *.class
+*.pyc
