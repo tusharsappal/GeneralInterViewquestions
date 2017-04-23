@@ -3,3 +3,7 @@
 
 *.class
 *.pyc
+.idea/inspectionProfiles/
+.idea/markdown-navigator/
+GeneralInterViewquestions.iml
+out/
