@@ -31,7 +31,5 @@ class LocalMinima(object):
         print "local minima is present at index %d" %(self.findLocalMin(input_list, 0 , len(input_list)-1, len(input_list)))
 
 
-
-
 if __name__=="__main__":
     LocalMinima().localMinima()
