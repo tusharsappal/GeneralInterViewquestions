@@ -1,5 +1,5 @@
-.idea/*.xml
-.idea/*.iml
+.idea/
+.idea/
 
 *.class
 *.pyc
