@@ -16,4 +16,3 @@ class PrintAllSubStrings(object):
 
 if __name__=="__main__":
     PrintAllSubStrings().printallSubStrings()
-
