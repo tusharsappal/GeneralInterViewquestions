@@ -63,7 +63,26 @@ class LinkedList(object):
             self.reverseLinkedList(node.next)
             print node.data
 
+    def reverseLinkedListUsingIteration(self):
+        self._reverseLinkedListUsingIteration(self.head)
 
+    def _reverseLinkedListUsingIteration(self, node):
+
+        if node is None:
+            return
+        else:
+            prev = None
+            current = node
+
+            while current != None:
+                next = current.next
+                current.next = prev
+                prev = current
+                current = next
+            self.head = prev
+
+        print "Again the reverse LinkedList"
+        self.printLinkedListValues()
 
 
 if __name__ == "__main__":
@@ -76,5 +95,12 @@ if __name__ == "__main__":
     linkedList.addElementsToLinkedList(6)
 
     linkedList.printLinkedListValues()
+
+    # Now we will be reversing the linkedList using the iteration method
+
+    linkedList.reverseLinkedListUsingIteration()
+
+
+
 
 
