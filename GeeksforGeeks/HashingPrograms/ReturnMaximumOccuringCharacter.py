@@ -15,7 +15,6 @@ class ReturnHighestNumberOfCharacters(object):
 
         max = 0
 
-
         for character in string_input:
             if hashArray[ord(character)] > max:
                 max = hashArray[ord(character)]
