@@ -2,23 +2,40 @@
 Write code to reverse a C-Style String. (C-String means that "abcd" is represented as five characters, including the null character.)
 '''
 
-class ReverseCStyleString(object):
-    def __init__(self, stringToBeReversed):
-        self.stringToreverse = stringToBeReversed
+class CheckAnagram(object):
+    def __init__(self, firstString, secondString):
+        self.firstString = firstString
+        self.secondString = secondString
 
+    def checkAnagram(self):
+        tempArray = [0]*256
 
-    def revereString(self):
-        self.stringToreverse.__add__("\\")
-        r = len(self.stringToreverse)-1
+        for char in self.firstString:
+            tempArray[ord(char)-1] = tempArray[ord(char)-1] + 1
 
-        for i in range(r , 0 , -1):
-            print self.stringToreverse[i],
+        # Now subtracting the elements from second string and the above Temp Array
 
+        for char in self.secondString:
+            if tempArray[ord(char)-1] == 1:
+                tempArray[ord(char)-1] = tempArray[ord(char)-1] - 1
+            else:
+                return False
 
+        sum = 0
+        for element in tempArray:
+            sum = sum + element
+
+        if sum == 0 :
+            return True
+        else:
+            return False
 
 
 if __name__ == "__main__":
-    reverse = ReverseCStyleString("Tushar")
-    reverse.revereString()
+    ana = CheckAnagram("abcd", "bac")
+    if ana.checkAnagram():
+        print "Strings are Anagrams"
+    else:
+        print "Strings are not Anangrams"
 
 
