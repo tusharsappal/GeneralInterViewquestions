@@ -14,7 +14,7 @@ class SumOfArrayRecursion(object):
             print "Sum is %d " %listOfElements[0]
         else:
             print "Sum is %d "%(self._getSumOfElements(listOfElements, len(listOfElements)))
-
+    
 
 if __name__ == "__main__":
     listOfElements = [6, 5, 4, 3, 2, 1]

@@ -36,7 +36,8 @@ def insert(node, key):
 
 # Given a non-empty binary search tree, return the node
 # with minum key value found in that tree. Note that the
-# entire tree does not need to be searched
+# entire tree does not need to be searched, Since it will be a Binary Search tree we would only need to search the
+# Left Sub tree Section
 def minValueNode(node):
     current = node
 

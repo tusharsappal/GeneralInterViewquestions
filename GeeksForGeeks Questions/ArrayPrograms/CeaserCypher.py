@@ -3,7 +3,7 @@
 
 class CaeserCypher(object):
 
-    def __init__(self,shift):
+    def __init__(self, shift):
         self.shift = shift
 
     def encode(self,listChar):

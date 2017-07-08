@@ -54,7 +54,6 @@ class LinkedList(object):
 
         return True
 
-
     def checkLinkedListisPalindrome(self):
 
         stackToPushElements = []

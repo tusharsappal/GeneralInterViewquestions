@@ -17,6 +17,5 @@ class CheckForMissingNumber(object):
 
         print "The number missing is %d" %(sum)
 
-
 if __name__=="__main__":
     CheckForMissingNumber().checkForMissingNumber()
